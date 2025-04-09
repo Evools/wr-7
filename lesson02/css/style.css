@@ -1,0 +1,20 @@
+* {
+  margin: 0; /* Обнуление внешних отступов */
+}
+.wrapper {
+  font-family: sans-serif; /* Семейство шрифтов */
+}
+.banner {
+  text-align: center; /* Выравнивание по центру */
+  background: #6e85f7; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 270px; /* Внутренние поля */
+}
+.banner__title {
+  font-size: 32px; /* Размер шрифта */
+  text-transform: uppercase; /* Перевод в верхний регистр */
+}
+.banner__desc {
+  font-size: 18px; /* Размер шрифта */
+  margin-top: 20px; /* Внешний отступ сверху */
+}
