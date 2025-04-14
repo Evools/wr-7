@@ -1,0 +1,118 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #f1f8e9);
+  padding: 40px;
+  margin: 0;
+  color: #333;
+}
+
+.table-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+}
+
+.table-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  padding: 30px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.user-table thead {
+  background-color: #f9f9fb;
+}
+
+.user-table th,
+.user-table td {
+  padding: 18px 22px;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #ececec;
+}
+
+.user-table th {
+  color: #5d6d7e;
+  font-weight: 600;
+}
+
+.user-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f3f7fa;
+  transform: translateY(-1px);
+}
+
+.icon {
+  margin-right: 8px;
+  color: #7f8c8d;
+}
+
+/* Статусы */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status--active {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+}
+
+.status--inactive {
+  background-color: #fbe9e7;
+  color: #d84315;
+}
+
+/* Роли */
+.role {
+  padding: 6px 10px;
+  border-radius: 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+  display: inline-block;
+}
+
+.role--admin {
+  background-color: #6c5ce7;
+}
+
+.role--moderator {
+  background-color: #00b894;
+}
+
+.role--user {
+  background-color: #0984e3;
+}
+
+@media (max-width: 600px) {
+  .user-table th,
+  .user-table td {
+    font-size: 0.9rem;
+    padding: 14px 16px;
+  }
+
+  .table-container {
+    padding: 20px;
+  }
+}
